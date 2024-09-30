@@ -1,0 +1,55 @@
+/* src/components/Scheduler.css */
+.scheduler-grid {
+    display: grid;
+    grid-template-columns: 100px repeat(7, 1fr); /* One column for hours, others for days */
+    grid-template-rows: repeat(24, 50px); /* 24 hours in a day */
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .scheduler-time-labels {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scheduler-time-label {
+    height: 50px; /* Height of each time slot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+  }
+  
+  .scheduler-columns {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* One column for each day */
+  }
+  
+  .scheduler-day-column {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    position: relative;
+    min-height: 1200px; /* Adjust height to show all events */
+  }
+  
+  .scheduler-day-header {
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+  }
+  
+  .scheduler-event {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+  }
+  
