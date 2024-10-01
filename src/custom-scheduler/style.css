@@ -1,12 +1,61 @@
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  th, td{
-    height: 50px;
-    padding: 5px 15px;
-    min-width: 200px;
-  }
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: top;
+  height: 50px;
+}
 
-  
+div.event {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 123, 255, 0.5);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-bg {
+  height: 100vh; 
+  width: 100vw; 
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10; 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+}
+
+.modal-container {
+  padding: 75px 50px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.scheduler-input{
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+.scheduler-row{
+  display: 'flex'; 
+  gap: '10px'; 
+  justify-content: 'center'; 
+  align-content: 'center';
+}
